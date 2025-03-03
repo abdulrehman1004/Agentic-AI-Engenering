@@ -1,0 +1,21 @@
+[project]
+name = "litellm-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abdulrehman104", email = "130191723+abdulrehman104@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.61.1",
+]
+
+[project.scripts]
+litellm = "litellm_project:main"
+llm_text = "litellm_project.text:main"
+llm_stream = "litellm_project.stream:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
